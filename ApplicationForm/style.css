@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #e6e7e8;
+    font-size: 14px;
+}
+
+.container {
+    width: 778px; /* Width as per the image */
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #c3c4c6;
+    border-radius: 4px;
+}
+
+.header {
+    background-color: #ff9200;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.logo {
+    width: 50px; /* Adjust as per your actual logo dimensions */
+    height: 50px; /* This should match the aspect ratio of your logo */
+    background: url('path_to_your_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+}
+
+.header-right p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.registration-form {
+    padding: 20px;
+}
+
+.registration-form h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9200;
+    display: inline-block;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3c4c6;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #ff9200;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    grid-column: span 2; /* Make the submit button span across both columns */
+}
+
+input[type="submit"]:hover {
+    background-color: #e68700;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #ff9200;
+}
+
+/* Additional styles for icons and other elements may be added based on the image's details */
