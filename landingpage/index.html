@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey -X</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('backG.jpg');
+            background-size: cover;
+            font-family: lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+            animation: colorChange 5s infinite;
+        }
+                /* @keyframes colorChange {
+                    0% { color: blue; }
+                    25% { color: green; }
+                    50% { color: red; }
+                    75% { color: purple; }
+                    100% { color: orange; }
+                } */
+    .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px;
+            font-size: 20px;
+            position: relative; 
+        }
+        .menu a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            height: 2px;
+            background-color: indianred;
+            transition: width 0.4s ease, left 0.4s ease;
+        }
+        .menu a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 50px;
+            font-size: 20px;
+            background-color: indianred;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-text {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .h-text h1 {
+            font-size: 2em;
+        }
+        .h-text a {
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .h-text a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="logo">Journey -X</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">HillStations</a>
+                <a href="#">Best Offers</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="register">
+                <a href="#">register</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Enjoy</span>
+            <h1>Indian Travel </h1>
+            <h2>Agency :)</h2>
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+    </header>
+    <footer style="text-align: center; font-size: 40px; color: grey; margin-top: 20px;">
+        Credits: Nur Mahammad, Debut to : TechnoHacks EduTech © 2023
+    </footer>
+</body>
+</html>
